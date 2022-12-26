@@ -7,7 +7,7 @@ python api wrapper for writing, creating, reading and deleting files in github
 ```python
 import github
 
-client = github.Client()
+client = github.Client(MY_USERNAME, MY_TOKEN)
 client.read_file('[YOUR REPOSITORY]', '[YOUR PATH TO FILE]')
 ```
 
@@ -17,13 +17,6 @@ client.read_file('[YOUR REPOSITORY]', '[YOUR PATH TO FILE]')
 ```python
 import github
 
-client = github.Client()
+client = github.Client(MY_USERNAME, MY_TOKEN)
 client.update_file('[YOUR REPOSITORY]', '[YOUR PATH TO FILE]', '[CONTENT TO WRITE]', '[OPTIONAL COMMIT MESSAGE]')
-
-'''
-e.g: client.update_file(test123, secrets/file.txt, hello world)
-test123 ->
-  screts ->
-    file.txt: hello world
-'''
 ```
