@@ -20,3 +20,10 @@ import github
 client = github.Client(MY_USERNAME, MY_TOKEN)
 client.update_file('[YOUR REPOSITORY]', '[YOUR PATH TO FILE]', '[CONTENT TO WRITE]', '[OPTIONAL COMMIT MESSAGE]')
 ```
+
+
+### Finding Token
+> top left profile
+> settings
+> developper settings
+> 
