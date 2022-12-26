@@ -4,7 +4,7 @@ python api wrapper for writing, creating, reading and deleting files in github
 
 ## Example Reading File
 
-python```
+```python
 import github
 
 client = github.Client()
