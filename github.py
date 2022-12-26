@@ -12,7 +12,7 @@ class Client:
         self.username = username
 
     @staticmethod
-    def __error_check(response: requests.Request):
+    def __error_check(response: requests.Request) -> None:
         if 'message' in response.json():
             raise GithubError(response.json()['message'])
 
