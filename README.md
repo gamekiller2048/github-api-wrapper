@@ -25,7 +25,7 @@ client.update_file('[YOUR REPOSITORY]', '[YOUR PATH TO FILE]', '[CONTENT TO WRIT
 ### Finding Your Access Token
 Click top right profile
 
-Go to Settings -> Developper settings -> Personal access token -> Tokens (classic)
+Go to Settings -> Developer settings -> Personal access token -> Tokens (classic)
 
 Click Generate new token -> Generate new token (classic)
 
