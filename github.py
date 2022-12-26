@@ -3,15 +3,15 @@ import base64
 
 
 class Client:
-    def __init__(self, username, token):
+    def __init__(self, username: str, token: str):
         self.token = token
         self.username = username
 
-    def __get_sha(self, url):
+    def __get_sha(self, url: str) -> str:
         response = requests.get(url, headers={'Authorization': 'token ' + self.token})
         return response.json()['sha']
 
-    def update_file(self, repos, path, content, message='add new file'):
+    def update_file(self, repos: str, path: str, content: str, message: str = '') -> None:
         url = f'https://api.github.com/repos/{self.username}/{repos}/contents/{path}'
         
         payload = {
@@ -22,13 +22,13 @@ class Client:
 
         requests.put(url, json=payload, headers={'Authorization': 'token ' + self.token})
 
-    def read_file(self, repos, path):
+    def read_file(self, repos: str, path: str) -> str:
         url = f'https://api.github.com/repos/{self.username}/{repos}/contents/{path}'
         response = requests.get(url, headers={'Authorization': 'token ' + self.token})
 
         return base64.b64decode(response.json()['content']).decode('utf-8')
 
-    def create_file(self, repos, path, content, message):
+    def create_file(self, repos: str, path: str, content: str = '', message: str = '') -> None:
         url = f'https://api.github.com/repos/{self.username}/{repos}/contents/{path}'
 
         payload = {
@@ -38,7 +38,7 @@ class Client:
         
         requests.put(url, json=payload, headers={'Authorization': 'token ' + self.token})
 
-    def delete_file(self, repos, path, message):
+    def delete_file(self, repos: str, path: str, message: str = '') -> None:
         url = f'https://api.github.com/repos/{self.username}/{repos}/contents/{path}'
 
         payload = {
