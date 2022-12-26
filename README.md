@@ -28,7 +28,9 @@ Click top right profile
 Go to Settings -> Developper settings -> Personal access token -> Tokens (classic)
 
 Click Generate new token -> Generate new token (classic)
+
  .select expiration
+ 
  .select control options
 
 Click Generate token
