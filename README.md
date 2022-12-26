@@ -10,3 +10,13 @@ import github
 client = github.Client()
 client.read_file('[YOUR REPOSITORY]', '[YOUR PATH TO FILE]')
 ```
+
+
+## Example Writing File
+
+```python
+import github
+
+client = github.Client()
+client.update_file('[YOUR REPOSITORY]', '[YOUR PATH TO FILE]', '[CONTENT TO WRITE]', '[OPTIONAL COMMIT MESSAGE]')
+```
