@@ -23,18 +23,12 @@ client.update_file('[YOUR REPOSITORY]', '[YOUR PATH TO FILE]', '[CONTENT TO WRIT
 
 
 ### Finding Token
-Top left profile\
+Click top right profile
 
-Settings\
+Go to Settings -> Developper settings -> Personal access token -> Tokens (classic)
 
-Developper settings\
+Click Generate new token -> Generate new token (classic)
 
-Personal access token\
-
-Generate new token\
-
-Generate new token (classic)\
-
-select control options\
+select control options
 
 Generate token
