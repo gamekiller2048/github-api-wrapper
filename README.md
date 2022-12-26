@@ -29,6 +29,6 @@ Go to Settings -> Developer settings -> Personal access token -> Tokens (classic
 
 Click Generate new token -> Generate new token (classic)
 
-select expiration & control option scopes **(make sure to check repo scope in order for access to private repositories)**
+Select expiration & control option scopes **(make sure to check repo scope in order for access to private repositories)**
 
 Click Generate token
