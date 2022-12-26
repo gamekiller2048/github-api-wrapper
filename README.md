@@ -23,7 +23,11 @@ client.update_file('[YOUR REPOSITORY]', '[YOUR PATH TO FILE]', '[CONTENT TO WRIT
 
 
 ### Finding Token
-> top left profile
-> settings
-> developper settings
-> 
+top left profile
+Settings
+Developper settings
+Personal access token
+Generate new token
+Generate new token (classic)
+select control options
+Generate token
